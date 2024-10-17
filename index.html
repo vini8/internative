@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internative</title>
+
+    <!-- font--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="./assets/tailwind/tailwind.js"></script>
+    <script src="./tailwindConfig.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  </head>
+  <body class="bg-[#FDFBFE] font-figtree">
+    <!-- Header -->
+    <header
+      class="xl:block bg-[#ffffff] py-5 border-b border-[#d0d0d0] absolute w-full top-0 xl:px-0 px-5"
+    >
+      <div class="default_container xl:max-w-[calc(100%-80px)] mx-auto">
+        <div class="header w-full flex items-center justify-between">
+          <div class="logo">
+            <a href="../index.html" class="flex items-center gap-[6px]">
+              <div>
+                <img src="./assets/header/logo.png" alt="logo" />
+              </div>
+            </a>
+          </div>
+
+          <div class="flex justify-center items-center w-[285px] rounded-full">
+            <button
+              class="hidden xl:block px-6 py-4 border border-[#6D6F79] font-bold bg-[#000000] rounded-full text-[#ffffff]"
+            >
+              <a href="./contact.html">Get in Touch</a>
+            </button>
+          </div>
+
+          <div class="profile flex items-center gap-6">
+            <div class="icon flex items-center gap-5">
+              <div
+                class="transition-all duration-300 hover:bg-[#FFFFFF1A] opacity-75 hover:opacity-100 p-2 rounded-full"
+              >
+                <a href="" class="font-bold"> Login </a>
+              </div>
+
+              <div
+                class="transition-all duration-300 hover:bg-[#FFFFFF1A] opacity-75 hover:opacity-100 p-2 rounded-full"
+              >
+                <a href="" class="font-bold"> Menu </a>
+              </div>
+
+              <div class="group relative">
+                <button
+                  class="pic flex items-center"
+                  onclick="toggleDropdown()"
+                >
+                  <div>
+                    <img src="assets/header/menu-grid.svg" alt="user" />
+                  </div>
+                </button>
+
+                <div
+                  class="dropdown-content absolute bg-[#3E4048] min-w-[160px] flex flex-col opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 origin-top z-50 transition-all duration-[.3s]"
+                  id="myDropdown"
+                >
+                  <a
+                    class="px-5 py-3 text-[#FFFFFF] transition-all duration-300 hover:bg-[#4361EE] hover:scale-105"
+                    href="#"
+                    >Profile</a
+                  >
+                  <a
+                    class="px-5 py-3 text-[#FFFFFF] transition-all duration-300 hover:bg-[#4361EE] hover:scale-105"
+                    href="#"
+                    >Logout</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-[130px] xl:px-0 px-5">
+      <section
+        class="bg-[url('./assets/home/grid-bg.webp')] bg-contain py-12 bg-fixed"
+      >
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto"
+        >
+          <div class="content flex xl:flex-row flex-col">
+            <div class="heading flex flex-col gap-2 xl:w-[50%] animate-left">
+              <span
+                class="font-bold text-primary flex flex-col break-words"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <span
+                  class="xl:text-[65px] text-[45px] tracking-[-3px] xl:leading-[65px] leading-[45px] max-w-[695px]"
+                >
+                  Unleash the <br />
+                  <span class="text-[#0019ff]">Power</span> of  
+                  <span class="xl:ps-[80px] flex gap-6"
+                    ><span class="text-[#0019ff]">Native</span> Regional</span
+                  >
+                  <span class="text-[#0019ff]">Engagement</span>
+                </span>
+                <span class="text-[28px] xl:text-end xl:max-w-[595px]">
+                  <button
+                    class="px-5 py-3 bg-[#0019ff] text-center rounded-full text-[#ffffff] mt-5"
+                  onclick="playAnimations()"
+                    >
+                    with internative
+                  </button>
+                </span>
+              </span>
+              <div
+                class="xl:w-[50%]"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div><span class="text-[36px]">Say</span></div>
+                
+                <div class="text-animation">
+
+                </div>
+                <div>
+                  <span class="text-[20px]"
+                    >to Internative, your one-stop platform for building
+                    powerful and personalized connections with your retailers,
+                    partners, and consumers. <br /><br />
+
+                    It's a cloud-based AI-driven solution that empowers brands
+                    to create, manage, & optimize their native engagement
+                    initiatives.</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="xl:w-[50%]">
+              <img
+                src="./assets/home/top-banner.webp"
+                class="hidden xl:block w-full m-auto animate-right"
+                alt="top banner"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto flex xl:flex-row flex-col py-8"
+        >
+          <div class="xl:w-[40%]">
+            <div
+              class="xl:w-[50%] text-end ml-auto mt-auto pe-5 h-full flex justify-end flex-col"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <span class="text-[20px]">
+                to Internative, your one-stop platform for building powerful and
+                personalized connections with your retailers, partners, and
+                consumers. <br />
+                <br />
+
+                It's a cloud-based AI-driven solution that empowers brands to
+                create, manage, & optimize their native engagement initiatives.
+              </span>
+            </div>
+          </div>
+          <div class="xl:w-[60%]">
+            <div class="xl:border-l border-[#0019ff]" data-aos="fade-left">
+              <span
+                class="font-bold text-primary flex flex-col xl:text-end break-words"
+              >
+                <span
+                  class="xl:text-[65px] text-[43px] tracking-[-3px] xl:leading-[65px] leading-[43px] leading-[60px]"
+                >
+                  Drive
+                  <span class="text-[#0019ff]">Retail</span> <br />
+                  <span class="xl:ps-[80px]">
+                    <span class="text-[#0019ff]">Engagement</span> and
+                  </span>
+                  <br />
+                  <span class="text-[#0019ff]">Loyalty</span>
+                </span>
+              </span>
+              <div class="text-end">
+                <img
+                  src="assets/home/drive banner.webp"
+                  alt="drive banner"
+                  class="ml-auto pt-14 animate-right xl:w-[90%]"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mx-auto py-14 flex flex-row relative">
+          <div class="grid xl:grid-cols-5 lg:grid-cols-2 gap-4 w-full z-[1]">
+            <div
+              class="flex-1 bg-[#0019ffe6] rounded-xl p-6"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <div class="text-end mb-14">
+                <span class="text-[40px] text-[#ffffff]">01</span>
+              </div>
+              <div class="mb-5 mt-8">
+                <span class="text-[25px] text-[#ffffff] font-bold"
+                  >B2B Partners</span
+                >
+              </div>
+              <div class="pe-20">
+                <span class="text-[20px] text-[#ffffff]"
+                  >Design attractive promotions and contests to motivate
+                  retailers, distributors, sales teams, and B2B partners.</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-gradient-to-r from-[#000000] to-[#000000] rounded-xl p-6"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <div class="text-end mb-14">
+                <span class="text-[40px] text-[#ffffff]">02</span>
+              </div>
+              <div class="mb-5 mt-8">
+                <span class="text-[25px] text-[#ffffff] font-bold"
+                  >Marketing Partners</span
+                >
+              </div>
+              <div class="pe-20">
+                <span class="text-[20px] text-[#ffffff]"
+                  >Manage operations across multiple sales offices and marketing
+                  teams.</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-gradient-to-r from-[#0019ffff] to-[#0019ff] rounded-xl p-6"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <div class="text-end mb-14">
+                <span class="text-[40px] text-[#ffffff]">03</span>
+              </div>
+              <div class="mb-5 mt-8">
+                <span class="text-[25px] text-[#ffffff] font-bold"
+                  >Regional</span
+                >
+              </div>
+              <div class="pe-20">
+                <span class="text-[20px] text-[#ffffff]"
+                  >Drive localized marketing initiatives on a granular and
+                  regional basis.</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-gradient-to-r from-[#000000] to-[#000000] rounded-xl p-6"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <div class="text-end mb-14">
+                <span class="text-[40px] text-[#ffffff]">04</span>
+              </div>
+              <div class="mb-5 mt-8">
+                <span class="text-[25px] text-[#ffffff] font-bold"
+                  >Rewards</span
+                >
+              </div>
+              <div class="pe-20">
+                <span class="text-[20px] text-[#ffffff]"
+                  >Integrate with your existing loyalty programs and reward
+                  systems.</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex-1 bg-gradient-to-r from-[#0019ffff] to-[#0019ff] rounded-xl p-6"
+              data-aos="flip-down"
+              data-aos-duration="1000"
+            >
+              <div class="text-end mb-14">
+                <span class="text-[40px] text-[#ffffff]">05</span>
+              </div>
+              <div class="mb-5 mt-8">
+                <span class="text-[25px] text-[#ffffff] font-bold"
+                  >Loyalty</span
+                >
+              </div>
+              <div class="pe-20 animate-left">
+                <span class="text-[20px] text-[#ffffff]"
+                  >Drive retail participation, repeat orders and retailer
+                  loyalty with engaging and personalized experiences.</span
+                >
+              </div>
+            </div>
+          </div>
+          <img
+            src="assets/home/slab-shape.svg"
+            alt="slab"
+            class="absolute animate-left left-[-500px] top-[-100px] w-[40%] z-[0]"
+          />
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto py-14"
+        >
+          <div
+            class="text-center w-full mt-auto pe-5 h-full"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <span
+              class="xl:text-[65px] text-[50px] tracking-[-3px] xl:leading-[65px] leading-[50px] font-bold break-words"
+            >
+              Powerful <br />
+              <span class="text-[#0019ff]">Hyper-Personalized</span> Campaigns
+              in <br />
+              <span class="xl:ps-[80px]"
+                ><span class="text-[#0019ff]">multiple regional</span>
+                lanuages</span
+              >
+            </span>
+          </div>
+          <div class="text-center mt-8">
+            <span class="text-[25px]"
+              >Drive localized marketing initiatives on a granular and regional
+              basis.</span
+            >
+          </div>
+          <div class="text-center relative flex flex-col justify-center xl:px-16 mb-[50px]">
+            <img
+              src="assets/home/dryfruit.png"
+              alt="dryfruit"
+              class="xl:absolute left-0 top-[35%] z-[999]"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            />
+            <img
+              src="assets/home/General-retail.png"
+              alt="store"
+              class="w-[90%] w-auto"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            />
+            <img
+              src="assets/home/shopkeeper.png"
+              alt="vegetable"
+              class="xl:absolute right-0 top-[25%] aos-init aos-animate xl:m-0 mt-8"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+            />
+          </div>
+          <div class="flex w-full items-start">
+            <div class="xl:w-[40%] relative me-[-10px]">
+              <img
+                src="assets/home/store-line-shape.svg"
+                alt="store line"
+                class="w-full absolute mt-[-3rem]"
+                data-aos="fade-down"
+                data-aos-duration="3000"
+              />
+            </div>
+            <div class="xl:w-[60%]">
+              <ul class="text-[25px] flex flex-col gap-4 pt-8" data-aos="fade-up" data-aos-duration="3000">
+                <li class="flex items-baseline gap-4">
+                  <img src="assets/home/list-circle.svg" alt="list circle" />
+                  Craft campaigns that resonate deeply with each audience
+                  segment. Hyper-personalize campaigns based on audience,
+                  industry, use case, content medium, and consumer needs.
+                </li>
+                <li class="flex items-baseline gap-4">
+                  <img src="assets/home/list-circle.svg" alt="list circle" />
+                  Leverage powerful AI to personalize content based on industry,
+                  use case, content medium, and consumer needs.
+                </li>
+                <li class="flex items-baseline gap-4">
+                  <img src="assets/home/list-circle.svg" alt="list circle" />
+                  Gain Break down language barriers and deliver content in their
+                  native language for a more impactful experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto py-[10rem]"
+        >
+          <div class="mb-6 w-full">
+            <span
+              class="xl:text-[65px] text-[45px] tracking-[-3px] xl:leading-[65px] leading-[45px] font-bold relative break-words"
+            >
+              <span class=""
+                >Deliver Emails, SMSes, and Whatsapp Promos to build</span
+              >
+              <span class="text-[#0019ff]">engagement</span> and
+              <span class="text-[#0019ff]">nurture relationships</span>
+            </span>
+          </div>
+          <div class="flex flex-wrap items-center">
+            <div
+              class="xl:w-[50%] w-full pe-5 h-full"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <div>
+                <ul class="text-[25px] flex flex-col gap-4 xl:w-[90%]">
+                  <li class="flex items-baseline gap-4">
+                    <img src="assets/home/list-circle.svg" alt="list circle" />
+                    Seamlessly deliver content through Internative’s powerful
+                    Email and WhatsApp sender engine. You can also integrate
+                    with your existing CRM platforms like Salesforce, Adobe,
+                    Mailchimp, or Sendgrid.
+                  </li>
+                  <li class="flex items-baseline gap-4">
+                    <img src="assets/home/list-circle.svg" alt="list circle" />
+                    Build effective lead funnels and automate nurture sequences
+                    across multiple channels.
+                  </li>
+                  <li class="flex items-baseline gap-4">
+                    <img src="assets/home/list-circle.svg" alt="list circle" />
+                    Gain valuable insights into campaign performance through
+                    integrated dashboards. Track metrics, gather market
+                    feedback, and learn from your campaigns for continuous
+                    improvement.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="xl:w-[50%]">
+              <div class="px-10 py-10 relative">
+                <img
+                  src="assets/home/nurture-relationships.png"
+                  alt="social-engagements"
+                  class="animate-right m-auto w-full"
+                />
+                <img
+                  src="assets/home/youtube-icon.png"
+                  alt="youtube"
+                  class="absolute top-[35%] left-[20%]"
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                />
+                <img
+                  src="assets/home/facebook-icon.png"
+                  alt="facebook"
+                  class="absolute right-[3%] top-[25%]"
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                />
+                <img
+                  src="assets/home/instagram-icon.png"
+                  alt="instagram"
+                  class="absolute bottom-[20%] left-[1%]"
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                />
+                <img
+                  src="assets/home/whatsapp-icon.png"
+                  alt="whatsapp"
+                  class="absolute bottom-0 right-0"
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto xl:py-[6rem] py-[2rem]"
+        >
+          <div class="flex flex-wrap items-center">
+            <div class="xl:w-[50%] w-full">
+              <div>
+                <img
+                  src="assets/home/content-ai-generator.webp"
+                  alt="content-ai-generator"
+                  class="w-full animate-right"
+                />
+              </div>
+            </div>
+            <div
+              class="xl:w-[50%] w-full text-end w-full pe-5"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <div class="mb-6 ps-6">
+                <span
+                  class="xl:text-[65px] text-[28px] tracking-[-3px] xl:leading-[65px] leading-[45px] font-bold relative break-words"
+                >
+                  <span class="text-[#0019ff]">Content Creation</span><br />
+                  <span class="">Powerhouse</span>
+                </span>
+              </div>
+              <div>
+                <ul class="text-[25px] flex flex-col gap-4 xl:ps-5 xl:w-[90%] xl:ml-auto">
+                  <li class="flex items-baseline flex-row-reverse gap-4">
+                    <img src="assets/home/list-circle.svg" alt="list circle" />
+                    Generate compelling text, image, and video content using
+                    cutting-edge AI and human expertise.
+                  </li>
+                  <li class="flex items-baseline flex-row-reverse gap-4">
+                    <img src="assets/home/list-circle.svg" alt="list circle" />
+                    Create engaging content for emails, WhatsApp messages,
+                    product demo videos, chatbots - all tailored to specific
+                    audiences.
+                  </li>
+                  <li class="flex items-baseline flex-row-reverse gap-4">
+                    <img src="assets/home/list-circle.svg" alt="list circle" />
+                    Craft content that fuels organic discovery in search engines
+                    (SEO), ONDC, Amazon, and social media.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto xl:pb-[6rem] xl:pt-[10rem] py-[5rem]"
+        >
+          <div
+            class="text-center w-full mt-auto pe-5 h-full"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <span
+              class="xl:text-[65px] text-[45px] tracking-[-3px] xl:leading-[65px] leading-[45px] font-bold relative break-words"
+            >
+              <span class="text-[#0019ff]">LET'S CREATE</span><br />
+              <span class="">TOGETHER</span>
+              <img
+                src="assets/home/create-shape.svg"
+                alt="create shape"
+                class="xl:absolute m-auto xl:right-[-14rem] right-0 xl:w-[70%] w-[50%] xl:top-[-10rem] top-[-5rem] animate-right"
+              />
+            </span>
+          </div>
+          <div class="text-center mt-5">
+            <button
+              class="bg-[#000000] relative text-[#ffffff] text-[20px] font-bold px-14 py-5 rounded-full"
+            >
+              Get in Touch
+              <img
+                src="assets/home/line.svg"
+                alt="line"
+                class="absolute left-[-90%] top-[50%]"
+              />
+            </button>
+            <img src="assets/home/shadow.svg" alt="shadow" class="m-auto" />
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-t border-[#a5a5a5]">
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto py-[2rem]"
+        >
+          <div class="flex w-full">
+            <div class="flex-1">
+              Copyright@2024 &nbsp;| &nbsp; Internative/ Nativebox Solutions
+              Private Limited
+            </div>
+            <div class="flex-1 xl:text-end">
+              <a href="./contact.html">Contact us</a> &nbsp; | &nbsp; Terms and Conditions &nbsp; | &nbsp;
+              <a href="./privacy-policy.html">Privacy policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <button onclick="topFunction()" id="topBtn" class="ease-in duration-500">
+        <img
+          src="assets/home/back-to-top.webp"
+          alt="back-to-top"
+          class="fixed bottom-[15%] xl:w-[150px] w-[100px] z-[999]"
+        />
+      </button>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+      var image = document.getElementsByClassName("animate-right");
+      new simpleParallax(image, {
+        overflow: true,
+        orientation: "right",
+      });
+
+      var image = document.getElementsByClassName("animate-left");
+      new simpleParallax(image, {
+        overflow: true,
+        orientation: "left",
+      });
+
+      var image1 = document.getElementsByClassName("animate-delay");
+      new simpleParallax(image1, {
+        delay: 0.6,
+        transition: "cubic-bezier(0,0,0,1)",
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

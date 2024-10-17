@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internative - Terms and Conditions</title>
+
+    <!-- font--- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="./assets/tailwind/tailwind.js"></script>
+    <script src="./tailwindConfig.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
+  </head>
+  <body class="bg-[#FDFBFE] font-figtree">
+    <!-- Header -->
+    <header
+      class="xl:block bg-[#ffffff] py-5 border-b border-[#d0d0d0] absolute w-full top-0 xl:px-0 px-5"
+    >
+      <div class="default_container xl:max-w-[calc(100%-80px)] mx-auto">
+        <div class="header w-full flex items-center justify-between">
+          <div class="logo">
+            <a href="../index.html" class="flex items-center gap-[6px]">
+              <div>
+                <img src="./assets/header/logo.png" alt="logo" />
+              </div>
+            </a>
+          </div>
+
+          <div class="flex justify-center items-center w-[285px] rounded-full">
+            <button
+              class="hidden xl:block px-6 py-4 border border-[#6D6F79] font-bold bg-[#000000] rounded-full text-[#ffffff]"
+            >
+              <a href="./contact.html">Get in Touch</a>
+            </button>
+          </div>
+
+          <div class="profile flex items-center gap-6">
+            <div class="icon flex items-center gap-5">
+              <div
+                class="transition-all duration-300 hover:bg-[#FFFFFF1A] opacity-75 hover:opacity-100 p-2 rounded-full"
+              >
+                <a href="" class="font-bold"> Login </a>
+              </div>
+
+              <div
+                class="transition-all duration-300 hover:bg-[#FFFFFF1A] opacity-75 hover:opacity-100 p-2 rounded-full"
+              >
+                <a href="" class="font-bold"> Menu </a>
+              </div>
+
+              <div class="group relative">
+                <button
+                  class="pic flex items-center"
+                  onclick="toggleDropdown()"
+                >
+                  <div>
+                    <img src="assets/header/menu-grid.svg" alt="user" />
+                  </div>
+                </button>
+
+                <div
+                  class="dropdown-content absolute bg-[#3E4048] min-w-[160px] flex flex-col opacity-0 scale-y-0 group-hover:opacity-100 group-hover:scale-y-100 origin-top z-50 transition-all duration-[.3s]"
+                  id="myDropdown"
+                >
+                  <a
+                    class="px-5 py-3 text-[#FFFFFF] transition-all duration-300 hover:bg-[#4361EE] hover:scale-105"
+                    href="#"
+                    >Profile</a
+                  >
+                  <a
+                    class="px-5 py-3 text-[#FFFFFF] transition-all duration-300 hover:bg-[#4361EE] hover:scale-105"
+                    href="#"
+                    >Logout</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="pt-[130px] xl:px-0 px-5">
+      <section
+        class="py-12"
+      >
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto"
+        >
+          <div class="content">
+            <div class="heading flex flex-col gap-2 animate-left mb-5">
+              <span
+                class="font-bold text-primary flex flex-col break-words"
+                data-aos="fade-bottom"
+                data-aos-duration="3000"
+              >
+                <span
+                  class="xl:text-[65px] text-[45px] tracking-[-3px] xl:leading-[65px] leading-[45px] text-center"
+                >
+                  Terms and 
+                  <span class="text-[#0019ff]">Conditions</span>
+                </span>
+              </span>
+            </div>
+            <div>
+              <div class="xl:w-[80%] m-auto">
+                <ol class="list-inside">
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">1. Introduction</span>
+                    <p>Welcome to Internative, a platform hosted on www.internative.io and managed by Nativebox Solutions Private Limited (“Company”, “we”, “our”, “us”)!</p>
+                    <p>Internative Platform allows users to :-</p>
+                    <ul class="list-disc list-inside ps-5">
+                      <li>Create multilingual content using third-party AI tools.</li>
+                      <li>Build product demos and other engagement initiatives.</li>
+                      <li>Develop quizzes, sweepstakes, and contests using various templates.</li>
+                      <li>Send emails and WhatsApp messages to their user base and prospective customers.</li>
+                      <li>Analyze the campaigns basis analytics portal</li>
+                    </ul>
+                    <p>These Terms and Conditions (“Terms”) govern your use of our platform and services. Your agreement with us includes these Terms and our Privacy Policy. By accessing or using our platform, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy. If you disagree with (or cannot comply with) the Agreements, you may not use the Platform.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">2. Communications</span>
+                    <p>By using our platform, you agree to receive promotional messages, newsletters, marketing materials, notifications, and other communications related to your in-platform operations, purchases, contests, sweepstakes, and promotions. You may opt out of receiving these communications by following the unsubscribe link or by contacting us by filling up contact form on <a href="./contact.html" class="text-[#0019ff]">www.internative.io/contactus</a> </p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">3. Purchases</span>
+                    <p>If you wish to purchase any services offered through our platform, you may be asked to provide certain information relevant to your purchase. You represent and warrant that the information you provide is accurate, complete, and current. We reserve the right to refuse or cancel your order for various reasons, including product availability, errors in description or price, errors in your order, or suspected fraud.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">4. Contests, Sweepstakes, and Promotions</span>
+                    <p>Any contests, sweepstakes, or promotions made available through our platform may be governed by separate rules. If you participate in any such promotions, please review the applicable rules.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">5. Subscriptions</span>
+                    <p>Some parts of our platform may be billed on a subscription basis. You will be billed in advance on a recurring basis according to your selected subscription plan. Subscriptions automatically renew at the end of the Billing Cycle unless you or the Company cancels them. You can cancel your Subscription by contacting us on <a href="./contact.html" class="text-[#0019ff]">www.internative.io/contactus</a> </p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">6. Content</span>
+                    <p>Our platform allows you to create and send various types of content, including emails, WhatsApp messages, quizzes, polls, and product demos. You are responsible for the content you create and any promises made to end users. You are also responsible for the legality, reliability, and appropriateness of your Content. Internative grants you a non-exclusive license to use the platform to create and manage your content. You retain ownership of your content, but Internative may need certain rights to display and deliver it through the platform. We own and retain all rights to the Internative platform and its content and templates (excluding user-generated content).</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">7. Prohibited Uses</span>
+                    <p>You may use our platform only for lawful purposes and in accordance with these Terms. Prohibited uses include, but are not limited to, violating any applicable laws or regulations, transmitting unsolicited advertising, and impersonating others.</p>
+                    <p>You may not use the Internative platform for:</p>
+                    <ul class="list-disc list-inside ps-5">
+                      <li>Any unlawful purpose or violation of any applicable law or regulation.</li>
+                      <li>Exploiting, harming, or attempting to exploit or harm minors.</li>
+                      <li>Sending unsolicited advertising or promotional materials (spam).</li>
+                      <li>Impersonating Internative or any other person or entity.</li>
+                      <li>Infringing on the rights of others.</li>
+                      <li>Disrupting or interfering with the functioning of the platform.</li>
+                      <li>Sending unsolicited emails or messages to those who haven't opted-in.</li>
+                    </ul>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">8. Analytics</span>
+                    <p>We may use third-party services to monitor and analyze the use of our platform.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">9. Third Party App usage and Links to Third-Party Websites</span>
+                   <p>Internative relies on third-party APIs for content generation, translation, building, sending emails and WhatsApp messages, and functionalities related to sweepstakes, quizzes, and polls. We are not liable for any issues arising from these third-party services.</p>
+                   <p>Our platform may contain links to third-party websites. We have no control over the content or practices of these websites and assume no responsibility for them.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">10. Accounts and User Age appropriateness.</span>
+                   <p>When you create an account with us, you are responsible for maintaining the confidentiality of your account credentials. You must notify us immediately of any unauthorized use of your account. Our platform is intended for individuals aged 18 and older. By accessing or using our platform, you warrant that you are at least 18 years old, or the customers you are sending content to are at least 18 years of age.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">11. Intellectual Property</span>
+                   <p>Our platform and its content are the exclusive property of Nativebox Solutions Private Limited and its licensors. You may not use our trademarks or content without our prior written consent.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">12. Error Reporting and Feedback</span>
+                   <p>You may provide feedback or report errors concerning our platform using the contact form on <a href="./contact.html" class="text-[#0019ff]">www.internative.io/contactus.</a> </p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">13. User Responsibilities</span>
+                    <p>You are responsible for:</p>
+                    <ul class="list-disc list-inside ps-5">
+                      <li>Obtaining consent from your users to receive emails and WhatsApp messages.</li>
+                      <li>Managing your database and ensuring compliance with all necessary mandates before sending communication.</li>
+                      <li>Taking any liability arising from the use and production of your content.</li>
+                    </ul>
+                    <p>You agree not to use the Internative platform for any illegal or prohibited purposes.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">14. Disclaimer of Warranty</span>
+                   <p>Our platform is provided on an “as is” and “as available” basis. We make no warranties regarding the operation or availability of our platform.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">15. Limitation of Liability</span>
+                   <p>Except as prohibited by law, we will not be liable for any indirect, punitive, special, incidental, or consequential damages arising from your use of our platform.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">16. Termination</span>
+                   <p>We may terminate or suspend your access to our platform at any time, without prior notice or liability, for any reason.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">17. Governing Law and Dispute Resolution</span>
+                   <p>These Terms shall be governed by the laws of India. Any disputes arising from these Terms shall be subject to the exclusive jurisdiction of the courts in Mumbai, India.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">18. Service Agreement</span>
+                   <p>All services provided by Internative may be used for lawful purposes only. Users are prohibited from engaging in certain activities, including spamming and the use of purchased leads.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">19. Changes to Terms</span>
+                   <p>We reserve the right to amend these Terms at any time. Your continued use of our platform after any revisions become effective constitutes your acceptance of the revised Terms.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">20. Additional Terms for WhatsApp</span>
+                   <p>These Terms are in addition to any terms and conditions imposed by WhatsApp. You are responsible for complying with WhatsApp's terms of service.</p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">21. GDPR Compliance</span>
+                   <p>For businesses and users requiring information about our GDPR Compliance and commitment, please contact us using the contact form on <a href="./contact.html" class="text-[#0019ff]">www.internative.io/contactus.</a> </p>
+                  </li>
+                  <li class="flex flex-col gap-4 mb-8" data-aos="fade-up" data-aos-duration="3000">
+                    <span class="text-[25px] font-bold">22. Contact Us</span>
+                   <p>For any questions or feedback regarding these Terms and Conditions, please reach us using the contact form on <a href="./contact.html" class="text-[#0019ff]">www.internative.io/contactus</a> </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="border-t border-[#a5a5a5]">
+        <div
+          class="default_container xl:max-w-[calc(100%-240px)] mx-auto py-[2rem]"
+        >
+          <div class="flex w-full">
+            <div class="flex-1">
+              Copyright@2024 &nbsp;| &nbsp; Internative/ Nativebox Solutions
+              Private Limited
+            </div>
+            <div class="flex-1 xl:text-end">
+              <a href="./contact.html">Contact us</a> &nbsp; | &nbsp; <a href="./terms.html">Terms and Conditions</a> &nbsp; | &nbsp;
+              <a href="./privacy-policy.html">Privacy policy</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <button onclick="topFunction()" id="topBtn" class="ease-in duration-500">
+        <img
+          src="assets/home/back-to-top.webp"
+          alt="back-to-top"
+          class="fixed bottom-[15%] xl:w-[150px] w-[100px] z-[999]"
+        />
+      </button>
+    </main>
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+    <script>
+      var image = document.getElementsByClassName("animate-right");
+      new simpleParallax(image, {
+        overflow: true,
+        orientation: "right",
+      });
+
+      var image = document.getElementsByClassName("animate-left");
+      new simpleParallax(image, {
+        overflow: true,
+        orientation: "left",
+      });
+
+      var image1 = document.getElementsByClassName("animate-delay");
+      new simpleParallax(image1, {
+        delay: 0.6,
+        transition: "cubic-bezier(0,0,0,1)",
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,43 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+}
+
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url(./fonts/Raleway/static/Raleway-Black.ttf);
+}
+
+#topBtn {
+  display: none;
+}
+
+.text-animation {
+  animation-name: textAnimate;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  content: url('./assets/home/Hello!.png');
+}
+
+@keyframes textAnimate {
+  20% {
+    content: url('./assets/home/Hello!.png');
+    transform: translate(0, 0px);
+  }
+  60% {
+    content: url('./assets/home/Namaste.png');
+    transform: translate(0, 0px);
+  }
+  90% {
+    content: url('./assets/home/intro3.png');
+    transform: translate(0, 0px);
+  }
+}
